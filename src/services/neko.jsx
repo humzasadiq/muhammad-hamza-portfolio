@@ -94,7 +94,7 @@ export default function oneko() {
     nekoEl.style.zIndex = 100;
     nekoEl.style.cursor = "grab";
 
-    let nekoFile = "./src/assets/oneko/oneko-classic.gif";
+    let nekoFile = "https://github.com/kyrie25/spicetify-oneko/blob/main/assets/oneko/oneko-classic.gif?raw=true";
     const curScript = document.currentScript;
     if (curScript && curScript.dataset.cat) {
       nekoFile = curScript.dataset.cat;
