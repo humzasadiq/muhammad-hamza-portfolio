@@ -204,8 +204,8 @@ const Neko = () => {
           idleAnimation = availableIdleAnimations;
         }
         if (forceSleep) {
-          availableIdleAnimations = 'sleeping';
-          idleAnimation = 'sleeping';
+          const availableIdleAnimations = 'sleeping';
+          idleAnimation = availableIdleAnimations;
         }
 
         switch (idleAnimation) {
