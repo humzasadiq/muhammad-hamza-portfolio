@@ -1,0 +1,14 @@
+#home {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #home h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 1.2em;
+  }
+  

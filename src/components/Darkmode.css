@@ -1,0 +1,77 @@
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+    transition: color 0.4s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode, li span a.dark-mode{
+    background-color: rgb(48, 48, 48);
+    color: white;
+  }
+  
+  /* Text background color transitions */
+  h1 span, h2 span, h3 span, p span, li span a {
+    background-color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Dark mode text background colors */
+  body.dark-mode h1 span,
+  body.dark-mode h2 span,
+  body.dark-mode h3 span,
+  body.dark-mode p span,
+  body.dark-mode li span a{
+    color: white;
+    background-color: rgb(48, 48, 48);
+  }
+  
+  /* Dark mode text background color on hover */
+  body.dark-mode h1 span:hover,
+  body.dark-mode h2 span:hover,
+  body.dark-mode h3 span:hover,
+  body.dark-mode p span:hover,
+  body.dark-mode li span a:hover {
+    color: black;
+    background-color: #DED79C80;
+    transition: color 0.5s ease, background-color 0.5s ease;
+  }
+  
+  /* Smooth transition for text color */
+  h1, h2, h3, p, li {
+    transition: color 0.3s ease;
+  }
+  
+  /* Toggle button styles */
+  .toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: inherit; /* Ensures button color matches current theme */
+    padding: 5px;
+    width: 50px;
+    height: 4vh;
+    margin-top: 1.25vh;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for button color */
+    z-index: 100;
+  }
+
+  .toggle-btn:hover{
+    color: lightpink;
+  }
+
+  body.dark-mode .toggle-btn:hover{
+    color: #DED79C;
+  }
+  
+  /* Toggle button position */
+  .toggle-btn-div {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+  

@@ -1,0 +1,17 @@
+#about {
+    padding: 50px;
+  }
+  
+  #about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  

@@ -1,0 +1,26 @@
+.popup {
+    position: fixed;
+    top: 10px;
+    background-color: #DED79C50;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+h1 span, h2 span, h3 span, p span, li span a {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+h1 span:hover, h2 span:hover, h3 span:hover, p span:hover, li span a:hover {
+    background: #ffb6c150 ; 
+    transition: background-color 0.5s ease;
+}
+
+body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
