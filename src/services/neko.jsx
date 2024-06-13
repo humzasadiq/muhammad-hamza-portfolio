@@ -200,7 +200,8 @@ const Neko = () => {
           const availableIdleAnimations = ['scratchSelf', 'tired'];
           idleAnimation = availableIdleAnimations[Math.floor(Math.random() * availableIdleAnimations.length)];
         } else if (idleTime >= 50) {
-          idleAnimation = 'sleeping';
+          const availableIdleAnimations = 'sleeping';
+          idleAnimation = availableIdleAnimations;
         }
         if (forceSleep) {
           availableIdleAnimations = 'sleeping';
