@@ -8,10 +8,11 @@ import Art from './components/Art';
 import About from './components/About';
 import Contact from './components/Contact';
 import Darkmode from './components/Darkmode';
+import Neko from './services/neko';
 
 function App() {
   const [showPopup, setShowPopup] = useState(true);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(false);
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+    <Neko />
     <Darkmode></Darkmode>
     {showPopup && <div className='popup'>Hint: Double-Click Cat to make it sleep.</div>}
     <Router>
