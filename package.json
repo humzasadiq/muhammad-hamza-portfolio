@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-     "serve": "vite preview"
+     "serve": "vite preview",
+     "build:ui": "rm -rf dist && cd C:/Users/Hamza/Desktop/practice/Portfolio && npm run build",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "dependencies": {
     "react": "^18.2.0",
