@@ -5,7 +5,7 @@ const Neko = () => {
   useEffect(() => {
     (function oneko() {
       const nekoEl = document.createElement('div');
-      let nekoPosX = 32,
+      let nekoPosX = window.innerWidth * 0.5,
         nekoPosY = 32,
         mousePosX = 0,
         mousePosY = 0,
@@ -16,8 +16,8 @@ const Neko = () => {
         grabbing = false,
         grabStop = true,
         nudge = false,
-        forceSleep = false,
-        isCatFixed = false,
+        forceSleep = true,
+        isCatFixed = true,
         targetX,
         targetY = 32;
 
@@ -99,6 +99,7 @@ const Neko = () => {
         nekoEl.style.zIndex = 100;
         nekoEl.style.cursor = 'grab';
 
+
         const nekoFile = nekoGif; // Use the imported GIF
         nekoEl.style.backgroundImage = `url(${nekoFile})`;
 
@@ -115,6 +116,9 @@ const Neko = () => {
 
         nekoEl.addEventListener('mousedown', (e) => {
           if (e.button !== 0) return; // Only respond to left mouse button
+          else if (isCatFixed) {
+            nekoEl.style.cursor = 'grab';  
+          } else {
           nekoEl.style.cursor = 'grabbing';
           grabbing = true;
           let startX = mousePosX;
@@ -166,6 +170,7 @@ const Neko = () => {
 
           window.addEventListener('mousemove', mousemove);
           window.addEventListener('mouseup', mouseup);
+        }
         });
 
         window.onekoInterval = setInterval(frame, 100);

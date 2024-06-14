@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(false);
-    }, 3000);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -25,7 +25,7 @@ function App() {
     <>
     <Neko />
     <Darkmode></Darkmode>
-    {showPopup && <div className='popup'>Hint: Double-Click Cat to make it sleep.</div>}
+    {showPopup && <div className='popup'>Double-Click Cat to wake it up.</div>}
     <Router>
       <div className="App">
         <Header />
