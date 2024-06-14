@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Valkyrie A';
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-display: auto;
+    src: url("./assets/fonts/valkyrie-a/valkyrie_a_caps_regular.woff2") format("woff2");
+}
+
+body {
+    font-family: 'Valkyrie A', sans-serif;
+}
+
+
 .popup {
     position: fixed;
     top: 10px;

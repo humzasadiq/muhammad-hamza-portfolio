@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section id="contact">
       <h2><span>Contact</span></h2>
-      <p>This is the contact section where you can provide your contact details.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quod officia maxime architecto eos ullam nisi repudiandae deserunt ea asperiores, explicabo consequuntur sit corrupti? Assumenda rem aspernatur magni alias odio?</p>
     </section>
   );
 }

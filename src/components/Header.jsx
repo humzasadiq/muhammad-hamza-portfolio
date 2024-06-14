@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { MdOutlineFileDownload } from "react-icons/md";
+import { RxFontBold } from 'react-icons/rx';
 
 function Header() {
   useEffect(() => {
@@ -28,10 +29,11 @@ function Header() {
   return (
     <header>
       <div className="header-content">
-        <h1><span>cogito, ergo sum.</span></h1>
+        <h1><span>Cogito, Ergo Sum.</span></h1>
       </div>
-      <p>by Muhammad Hamza</p>
+      <p>By Muhammad Hamza</p>
       <nav>
+        <hr />
         <ul>
           <li><span><Link to="/">Home</Link></span></li>
           <li><span><Link to="/art">Art</Link></span></li>
@@ -39,6 +41,7 @@ function Header() {
           <li><span><a href="https://drive.google.com/file/d/12_N4ZUKBikzJuPX8F7aWjugqNK3UsVIj/view" target='_blank'>Résumé <MdOutlineFileDownload /></a></span></li>
           <li><span><Link to="/contact">Contact</Link></span></li>
         </ul>
+        <hr />
       </nav>
     </header>
   );
