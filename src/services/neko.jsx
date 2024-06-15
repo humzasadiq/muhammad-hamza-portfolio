@@ -98,6 +98,7 @@ const Neko = () => {
         nekoEl.style.top = `${nekoPosY - 16}px`;
         nekoEl.style.zIndex = 100;
         nekoEl.style.cursor = 'grab';
+        nekoEl.style.margin = '10px'
 
 
         const nekoFile = nekoGif; // Use the imported GIF
@@ -107,7 +108,7 @@ const Neko = () => {
 
         nekoEl.addEventListener('dblclick', sleep);
 
-        document.addEventListener('mousemove'||'touchmove', function (event) {
+        document.addEventListener('mousemove', function (event) {
           if (!isCatFixed) {
             mousePosX = event.clientX;
             mousePosY = event.clientY;
