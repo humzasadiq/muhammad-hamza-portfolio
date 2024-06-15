@@ -119,7 +119,13 @@ const Neko = () => {
           nekoEl.style.cursor = 'grabbing';
           startDrag(e.clientX, e.clientY);
         });
-        
+
+        nekoEl.addEventListener('touchstart', (e) => {
+          const touch = e.touches[0];
+          startDrag(touch.clientX, touch.clientY);
+          e.preventDefault();
+        }, { passive: false });
+
         function startDrag(startX, startY) {
           grabbing = true;
           let startNekoX = nekoPosX;
