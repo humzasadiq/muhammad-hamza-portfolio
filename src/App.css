@@ -37,4 +37,6 @@ body {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
   }
-
+  button, a {
+      -webkit-tap-highlight-color: transparent;
+  }

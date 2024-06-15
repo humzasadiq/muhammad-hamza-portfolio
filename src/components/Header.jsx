@@ -36,9 +36,9 @@ function Header() {
         <hr />
         <ul>
           <li><span><Link to="/">Home</Link></span></li>
-          <li><span><Link to="/art">Art</Link></span></li>
+          <li><span><Link to="/art">Hobby</Link></span></li>
           <li><span><Link to="/about">About</Link></span></li>
-          <li><span><a href="https://drive.google.com/file/d/12_N4ZUKBikzJuPX8F7aWjugqNK3UsVIj/view" target='_blank'>Résumé <MdOutlineFileDownload /></a></span></li>
+          <li><span><a href="" target='_blank'>Résumé <MdOutlineFileDownload /></a></span></li>
           <li><span><Link to="/contact">Contact</Link></span></li>
         </ul>
         <hr />
