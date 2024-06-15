@@ -107,7 +107,7 @@ const Neko = () => {
 
         nekoEl.addEventListener('dblclick', sleep);
 
-        document.addEventListener('mousemove', function (event) {
+        document.addEventListener('mousemove'||'touchmove', function (event) {
           if (!isCatFixed) {
             mousePosX = event.clientX;
             mousePosY = event.clientY;
@@ -118,10 +118,6 @@ const Neko = () => {
           if (e.button !== 0) return; // Only respond to left mouse button
           nekoEl.style.cursor = 'grabbing';
           startDrag(e.clientX, e.clientY);
-        });
-        nekoEl.addEventListener('touchstart', (e) => {
-            const touch = e.touches[0];
-            startDrag(touch.clientX, touch.clientY);
         });
         
         function startDrag(startX, startY) {
