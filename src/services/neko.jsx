@@ -106,6 +106,8 @@ const Neko = () => {
 
         document.body.appendChild(nekoEl);
 
+        let lastTap = 0;
+        
         nekoEl.addEventListener('dblclick', sleep);
 
         document.addEventListener('mousemove', function (event) {
@@ -135,8 +137,8 @@ const Neko = () => {
           
           lastTap = currentTime;
           e.preventDefault();
-        }, { passive: false });
-        
+        }, { passive: false })
+
         function startDrag(startX, startY) {
           grabbing = true;
           let startNekoX = nekoPosX;
