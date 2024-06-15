@@ -123,10 +123,20 @@ const Neko = () => {
 
         nekoEl.addEventListener('touchstart', (e) => {
           const touch = e.touches[0];
-          startDrag(touch.clientX, touch.clientY);
+          const currentTime = new Date().getTime();
+          const tapLength = currentTime - lastTap;
+          
+          if (tapLength < 500 && tapLength > 0) {
+            sleep();
+            e.preventDefault();
+          } else {
+            startDrag(touch.clientX, touch.clientY);
+          }
+          
+          lastTap = currentTime;
           e.preventDefault();
         }, { passive: false });
-
+        
         function startDrag(startX, startY) {
           grabbing = true;
           let startNekoX = nekoPosX;
